@@ -11,7 +11,7 @@ header{
     align-items: center;
     flex-wrap: wrap;
     background-image: url(Imagens/image.png);
-    height: 80vh;
+    min-height: 80vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,6 +25,8 @@ header{
     align-items: left;
     flex-direction: column;
     max-width: 60vw;
+
+    gap: 10px;
 }
 
 .textContent h1{
@@ -49,6 +51,7 @@ header{
     border-radius: 10px;
     padding: 5px 30px;
     cursor: pointer;
+    margin-top: 30px;
 
 
 }
@@ -58,24 +61,63 @@ header{
     font-family: 'Raleway';
 }
 
+@media (max-width:1300px) {
+    .textContent{
+        text-align: center;
+        align-items: center;
+        max-width: 90vw;
+    }
+    .textContent button{
+        margin: 50px 0;
+        font-size: 40px;
+    }
+
+    header{
+        padding: 50px 0;
+    }
+
+    .imageContent img{
+        width: 90vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .textContent h1{
+        font-size: 50px;
+    }
+    .imageContent {
+        display: none;
+    }
+
+    .textContent button{
+        font-size: 25px;
+    }
+}
+
+@media (max-width:400px) {
+    .textContent h1{
+        font-size: 40px ;
+    }
+}
+
 @keyframes flutuar {
-    0%{
-        padding-top: -20px;
-
+    0% {
+      transform: translateY(-50px);
+      
     }
-
-    50%{
-        padding-top: 0px;
+  
+    50% {
+      transform: translateY(0px);
     }
-
-    100%{
-        padding-top: -20px;
+  
+    100% {
+      transform: translateY(-50px);
     }
-}
-
-.imageContent{
+  }
+  
+  .imageContent img {
     animation-name: flutuar;
-    animation-duration: 2s;
-    
-
-}
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
