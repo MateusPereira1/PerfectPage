@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(Imagens/image.png);
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
+
+}
+
+.textContent{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    max-width: 60vw;
+}
+
+.textContent h1{
+    font-size: 80px;
+    max-width: 700px;
+    
+    
+}
+
+.textContent p{
+    font-size: 25px;
+    max-width: 700px;
+}
+
+.textContent button{
+    font-weight: 600;
+    background-color:#050A30 ;
+    border: none;
+    color: #FFF;
+    font-size: 30px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 5px 30px;
+    cursor: pointer;
+
+
+}
+
+
+.raleway{
+    font-family: 'Raleway';
+}
+
+@keyframes flutuar {
+    0%{
+        padding-top: -20px;
+
+    }
+
+    50%{
+        padding-top: 0px;
+    }
+
+    100%{
+        padding-top: -20px;
+    }
+}
+
+.imageContent{
+    animation-name: flutuar;
+    animation-duration: 2s;
+    
+
+}
