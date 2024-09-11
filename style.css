@@ -268,7 +268,7 @@ header {
 }
 
 
-.ofer-box{
+.ofer-box {
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -276,37 +276,39 @@ header {
     align-items: center;
     flex-wrap: wrap;
 
-    margin-bottom: 40px;    
+    margin-bottom: 40px;
 }
 
-.ofer-box img{
+.ofer-box img {
     width: 600px;
     border-radius: 10px;
 
 }
 
-.ofer{
+.ofer {
     width: 100%;
     color: #000;
     padding: 20px;
 }
-.ofer h1{   
+
+.ofer h1 {
     font-size: 35px;
     font-weight: 600;
 }
 
-.ofer p{
+.ofer p {
     font-size: 25px;
     max-width: 90%;
 }
-.ofer div{
+
+.ofer div {
     width: 400px;
     height: 4px;
     background-color: #050A30;
     border-radius: 10px;
 }
 
-.ofer-text{
+.ofer-text {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -314,14 +316,78 @@ header {
 }
 
 @media (max-width:700px) {
-    .ofer-box img{
+    .ofer-box img {
         width: 100%;
     }
 
 }
 
 @media (max-width:450px) {
-    .ofer div{
+    .ofer div {
         width: 100%;
     }
+}
+
+.depo {
+    background-color: #050A30;
+}
+
+.depo>.title {
+    color: #FFF;
+    background-color: #050A30;
+}
+
+.depo>.title h1 {
+    color: #FFF;
+    text-align: center;
+}
+
+.depo>.title div {
+    background-color: #FFF;
+    max-width: 400px;
+}
+
+.depo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #FFF;
+    text-align: center;
+    margin: 70px auto;
+}
+
+.depo-box img {
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    width: 150px;
+    border-radius: 100%;
+    margin-bottom: 30px;
+
+}
+
+.depo-box h1 {
+    font-size: 30px;
+}
+
+.depo-box h2 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 30px;
+
+}
+
+.depo-box p {
+    font-size: 25px;
+    width: 50%;
+    font-weight: 400;
+    font-style: italic;
+}
+
+@media (max-width:900px) {
+    .depo-box p{
+        width: 80%;
+    }
+
+  
 }
