@@ -266,3 +266,62 @@ header {
 .cta button:hover {
     scale: 1.1;
 }
+
+
+.ofer-box{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-bottom: 40px;    
+}
+
+.ofer-box img{
+    width: 600px;
+    border-radius: 10px;
+
+}
+
+.ofer{
+    width: 100%;
+    color: #000;
+    padding: 20px;
+}
+.ofer h1{   
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.ofer p{
+    font-size: 25px;
+    max-width: 90%;
+}
+.ofer div{
+    width: 400px;
+    height: 4px;
+    background-color: #050A30;
+    border-radius: 10px;
+}
+
+.ofer-text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 600px;
+}
+
+@media (max-width:700px) {
+    .ofer-box img{
+        width: 100%;
+    }
+
+}
+
+@media (max-width:450px) {
+    .ofer div{
+        width: 100%;
+    }
+}
