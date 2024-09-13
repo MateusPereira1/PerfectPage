@@ -469,7 +469,7 @@ header {
     flex-direction: column;
     text-align: center;
     background-image: url(Imagens/image.png);
-    min-height: 40vh;
+    min-height: 60vh;
     color: #fff;
     margin-top: 100px;
 }
@@ -594,4 +594,16 @@ marca{
     font-size: 20px;
     font-weight: 600;
     padding: 20px 0;
+}
+
+.tra:nth-of-type(1){
+    background-image: url(Imagens/Advocacia.png);
+}
+
+.tra:nth-of-type(2){
+    background-image: url(Imagens/academia.png);
+}
+
+.tra div{
+    border-radius: 20px;
 }
